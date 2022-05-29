@@ -1,5 +1,3 @@
-# react-app
-
 # Requirement:
 - net 6.0
 - react 18
