@@ -1,5 +1,5 @@
 /**
- * Conversion rate as of 28th May 2022
+ * Conversion rate as of 28th May 2022. TODO: Get it from live api
 */
 export enum Currency {
     AUD = 1, 
