@@ -11,4 +11,4 @@ It contains 3 main folders:
 
 # Run
 - Easiest is to run with visual studio code by hitting f5.
-- It should spawn backend and frontend service together, redirect from port 7119 to 44321 once ready
+- With some tuning, it should be able to spawn backend and frontend service together, redirect from port 7119 to 44321 once ready
