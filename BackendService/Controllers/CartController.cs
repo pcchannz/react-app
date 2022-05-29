@@ -21,4 +21,10 @@ public class CartController : ControllerBase
         return (totalAmount < 50 ) ? 10 : 20;
     }
     
+    [HttpPost]
+    [Route("order")]
+    public bool Order([FromBody] Order order)
+    {
+        return true;
+    }
 }

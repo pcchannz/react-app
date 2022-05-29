@@ -1,14 +1,38 @@
-import { render, screen, act } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+
 import Checkout from './Checkout';
 
-test('renders shipping amount', () => {
-    render(<Checkout></Checkout>);
-    const linkElement = screen.getByText(/Shipping/i);
-    expect(linkElement).toBeInTheDocument();
-});
+describe('Checkout component', () => {
+    test('renders loading text on load', () => {
+        // Arrange
+        render(<Checkout />);
 
-test('renders total amount', () => {
-    render(<Checkout></Checkout>);
-    const linkElement = screen.getByText(/Total amount/i);
-    expect(linkElement).toBeInTheDocument();
-});
+        // Act 
+        const outputElement = screen.getByText(/loading/i);
+
+        // Assert
+        expect(outputElement).toBeInTheDocument();
+    });
+
+    test('renders shipping amount', () => {
+        // Arrange
+        render(<Checkout></Checkout>);
+    
+        // Act
+        const outputElement = screen.getByText(/Shipping/i);
+    
+        // Assert
+        expect(outputElement).toBeInTheDocument();
+    });
+    
+    test('renders total amount', () => {
+        // Arrange
+        render(<Checkout></Checkout>);
+    
+        // Act
+        const outputElement = screen.getByText(/Total amount:/i);
+    
+        // Assert
+        expect(outputElement).toBeInTheDocument();
+    });
+})

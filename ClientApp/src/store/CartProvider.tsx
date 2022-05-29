@@ -49,6 +49,13 @@ const cartReducer = (state: CartState, action: CartStateAction) => {
         }
     }
 
+    if (action.type === OrderType.DONE) {
+        return {
+            ...state,
+            items: new Map<string, ProductOrder>()
+        }
+    }
+
     return defaultCartState;
 };
 
@@ -69,6 +76,9 @@ const CartProvider = (props: React.PropsWithChildren<{}>) => {
         dispatchCartAction({ type: OrderType.UPDATE_CURRENCY, value: value});
     };
 
+    const clearHandler = () => {
+        dispatchCartAction({ type: OrderType.DONE})
+    }
     const getDisplayPrice = (value: number) => `$${(value*+cartState.currencyRate).toFixed(2)}`;
 
     
@@ -79,6 +89,7 @@ const CartProvider = (props: React.PropsWithChildren<{}>) => {
         removeItem: removeItemFromCartHandler,
         getDisplayPrice: getDisplayPrice,
         setCurrencyRate: setCurrenyRateHandler,
+        clear: clearHandler,
         currencyRate: cartState.currencyRate,
     };
     return (

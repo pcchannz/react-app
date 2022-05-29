@@ -3,4 +3,5 @@ interface Cart extends CartState {
     removeItem: (id: string) => void;
     getDisplayPrice: (value: number) => string;
     setCurrencyRate: (value: number) => void;
+    clear: () => void;
 }

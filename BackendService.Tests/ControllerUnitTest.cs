@@ -22,7 +22,7 @@ public class ControllerUnitTest
     [Fact]
     public void Get_Product_DateFormat_OK() 
     {
-         // Arrange
+        // Arrange
         ProductController productController = new ProductController(Mock.Of<ILogger<ProductController>>());
 
         // Act

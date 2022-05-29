@@ -8,5 +8,5 @@ export enum Currency {
 }
 
 export enum OrderType {
-    ADD, REMOVE, UPDATE_CURRENCY
+    ADD, REMOVE, UPDATE_CURRENCY, DONE
 }

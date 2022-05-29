@@ -11,7 +11,8 @@ const CartContext = React.createContext<Cart>({
     addItem: (item: ProductOrder) => {},
     removeItem: (id: string) => {},
     getDisplayPrice: (value: number) => "",
-    setCurrencyRate: (value: number) => {}
+    setCurrencyRate: (value: number) => {},
+    clear: () => {}
 });
 
 export default CartContext;
