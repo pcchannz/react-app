@@ -15,3 +15,6 @@ It contains 3 main folders:
 
 # Test
 - On a separate terminal, cd to ClientApp, run "npm test" that will watch and run unit test
+
+# Deploy 
+- Out of scope
