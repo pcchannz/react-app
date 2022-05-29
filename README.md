@@ -1,5 +1,10 @@
 # react-app
 
+# Requirement:
+- net 6.0
+- react 18
+- visual studio code
+
 # Project structure
 It contains 3 main folders:
 - BackendService: which consists of product and cart related apis
