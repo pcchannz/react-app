@@ -1,5 +1,5 @@
 # Requirement:
-- net 6.0
+- net 6.0 c#
 - react 18
 - visual studio code
 
