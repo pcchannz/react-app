@@ -30,7 +30,6 @@ const Checkout = () => {
     }
 
     const postData = async () => {
-      
       const response = await postOrder('cart');
       const data = await response.json();
       setShippingAmount(data);
@@ -47,7 +46,6 @@ const Checkout = () => {
     const orderHandler = async () => {
       const response = await postOrder("cart/order");
       const data = await response.json();
-      console.log(data);
       if (data) {
         cartCtx.clear();
         history.push('thankyou');

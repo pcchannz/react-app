@@ -52,7 +52,8 @@ const cartReducer = (state: CartState, action: CartStateAction) => {
     if (action.type === OrderType.DONE) {
         return {
             ...state,
-            items: new Map<string, ProductOrder>()
+            items: new Map<string, ProductOrder>(),
+            totalAmount: 0
         }
     }
 
