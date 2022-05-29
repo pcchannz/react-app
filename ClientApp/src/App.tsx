@@ -1,6 +1,6 @@
 import { Route } from 'react-router-dom';
 import { Layout } from './components/Layout/Layout';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import Checkout from './components/Checkout/Checkout'; 
 import ThankYou  from './components/ThankYou/ThankYou';
 import './custom.css'
